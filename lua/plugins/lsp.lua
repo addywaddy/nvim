@@ -1,6 +1,6 @@
 return {
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
+  "mason-org/mason-lspconfig.nvim",
+  "mason-org/mason.nvim",
   {
     "neovim/nvim-lspconfig",
     opts = {
@@ -10,6 +10,10 @@ return {
         },
         rubocop = {
           mason = false,
+        },
+        elixirls = {
+          mason = false,
+          cmd = { "elixir-ls" },
         },
       },
     },
