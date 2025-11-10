@@ -1,6 +1,6 @@
 return {
-  "mason-org/mason-lspconfig.nvim",
-  "mason-org/mason.nvim",
+  { "williamboman/mason-lspconfig.nvim", enabled = false },
+  { "williamboman/mason.nvim",           enabled = false },
   {
     "neovim/nvim-lspconfig",
     opts = {
@@ -12,8 +12,11 @@ return {
           mason = false,
         },
         elixirls = {
+          cmd = "elixir-ls",
           mason = false,
-          cmd = { "elixir-ls" },
+        },
+        erlangls = {
+          mason = false,
         },
       },
     },
